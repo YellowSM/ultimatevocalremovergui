@@ -315,7 +315,6 @@ def drop(event, accept_mode: str = 'files'):
                 root.inputPaths = tuple(current_paths)
             else:
                 root.inputPaths = tuple(path)
-            root.inputPaths = tuple(path)
             root.process_input_selections()
             root.update_inputPaths()
         elif accept_mode in [FILE_1, FILE_2]:
@@ -7273,4 +7272,3 @@ if __name__ == "__main__":
     root.deiconify()
     root.configure(bg=BG_COLOR)
     root.mainloop()
-
